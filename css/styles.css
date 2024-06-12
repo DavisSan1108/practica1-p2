@@ -1,0 +1,133 @@
+body {
+    background-color: rgba(10, 10, 10, 0.9); 
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('library.jpg'); /* Añade la imagen de la biblioteca */
+    background-size: cover;
+    background-position: center;
+}
+
+header, footer {
+    padding: 20px 0;
+    background-color: #FF00FF; /* Color neón rosado */
+    color: #00FFFF; /* Color cian */
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 30px #00FFFF;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+}
+
+.elegant-form .form-group {
+    margin-bottom: 15px;
+}
+
+.elegant-form .form-control {
+    border: 1px solid #00FFFF; 
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente oscuro */
+    color: #FFFFFF;
+}
+
+.elegant-form .btn-primary {
+    background-color: #FF00FF; 
+    border-color: #FF00FF;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #00FFFF;
+    box-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF, 0 0 30px #FF00FF;
+}
+
+.elegant-list .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 15px;
+    border: 1px solid #00FFFF; 
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente oscuro */
+    color: #FFFFFF;
+}
+
+.elegant-list .task-info {
+    flex: 1;
+}
+
+.elegant-list .task-actions {
+    margin-left: 10px;
+}
+
+.elegant-list .btn-danger,
+.elegant-list .btn-success,
+.elegant-list .btn-warning {
+    margin-left: 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFFFFF;
+}
+
+.elegant-list .btn-danger {
+    background-color: #FF0000; /* Rojo neón */
+    box-shadow: 0 0 10px #FF0000;
+}
+
+.elegant-list .btn-success {
+    background-color: #00FF00; /* Verde neón */
+    box-shadow: 0 0 10px #00FF00;
+}
+
+.elegant-list .btn-warning {
+    background-color: #FFFF00; /* Amarillo neón */
+    box-shadow: 0 0 10px #FFFF00;
+}
+
+.task-pending {
+    border-left: 5px solid #FF00FF; 
+}
+
+.task-resolved {
+    border-left: 5px solid #00FF00; 
+    background-color: rgba(0, 255, 0, 0.2); 
+}
+
+.task-expired {
+    border-left: 5px solid #FF0000; 
+    background-color: rgba(255, 0, 0, 0.2); 
+}
+
+#task-search {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente oscuro */
+    color: #FFFFFF;
+    border: 1px solid #00FFFF;
+}
+
+#task-filter {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente oscuro */
+    color: #FFFFFF;
+    border: 1px solid #00FFFF;
+}

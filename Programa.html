@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas </title>
+    <!-- Vinculación de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Vinculación del archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="container">
+        <h1 class="mt-5">Lista de Tareas</h1>
+        <p class="lead">Gestiona tus tareas de manera sencilla.</p>
+    </header>
+
+    <main class="container">
+        <!-- Formulario para agregar tareas -->
+        <section class="mb-5">
+            <h2>Agregar Tarea</h2>
+            <form id="task-form" class="elegant-form">
+                <div class="form-group">
+                    <label for="task-name">Nombre de la tarea</label>
+                    <input type="text" class="form-control" id="task-name" placeholder="Nueva tarea">
+                </div>
+                <div class="form-group">
+                    <label for="task-start-date">Fecha de inicio</label>
+                    <input type="date" class="form-control" id="task-start-date">
+                </div>
+                <div class="form-group">
+                    <label for="task-end-date">Fecha de fin</label>
+                    <input type="date" class="form-control" id="task-end-date">
+                </div>
+                <div class="form-group">
+                    <label for="task-responsible">Responsable</label>
+                    <input type="text" class="form-control" id="task-responsible" placeholder="Responsable de la tarea">
+                </div>
+                <button type="submit" class="btn btn-primary">Agregar</button>
+            </form>
+        </section>
+
+        <!-- Búsqueda y filtros -->
+        <section class="mb-5">
+            <h2>Buscar y Filtrar Tareas</h2>
+            <input type="text" id="task-search" class="form-control" placeholder="Buscar tareas...">
+            <div class="form-group mt-3">
+                <select id="task-filter" class="form-control">
+                    <option value="all">Todas las tareas</option>
+                    <option value="expired">Tareas vencidas</option>
+                    <option value="resolved">Tareas resueltas</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Lista de tareas -->
+        <section>
+            <h2>Lista de Tareas</h2>
+            <ul id="task-list" class="list-group elegant-list">
+                <!-- Las tareas se agregarán aquí dinámicamente -->
+            </ul>
+        </section>
+    </main>
+
+    <footer class="container">
+        <p class="text-center mt-5">Lista de tareas Aplicaciones Web</p>
+    </footer>
+
+    <!-- Vinculación del archivo JavaScript personalizado -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
